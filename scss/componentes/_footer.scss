@@ -1,0 +1,100 @@
+@import "../base/variables";
+@import "../base/mixin";
+@import "../base/extend";
+ 
+footer{
+    .footer-contenedor{
+        background-color: $color-principal;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        .footer-logo{
+            @include flex-2 (flex, center, center);
+            img{
+                width: 90px;
+                height: 90px;
+            }
+        }
+        .footer-items{
+            width: 100%;
+            list-style: none;
+            box-sizing: border-box;
+            @include flex (flex, wrap, space-between);
+            .footer-izquieda{
+                .footer-izquierda-pago{
+                    h3{
+                        @extend %font-contenido-fijo;
+                        @include font-footer (1.125em, left);
+                        margin: 0.625rem;
+                    }
+                }
+                .footer-izquierda-iconos{
+                    @include flex (flex, wrap, flex-start);
+                    flex-direction: row;
+                    img{
+                        width: 50px;
+                        height: 26px;
+                        margin: 0px 5px 5px 0px;
+                        box-sizing: border-box;
+                    }
+                }
+                .footer-izquierda-info{
+                    @extend %font-contenido-fijo;
+                    @include font-footer (1.125rem, left);
+                    margin: 0.625rem;
+                    .footer-izquierda-enlaces{
+                        @include flex (flex, nowrap, space-between);
+                        align-items: center;
+                        align-content: flex-end;
+                        li{
+                            @include font-1 ('Arima' cursive, 1.25rem, none);
+                            font-size: 1.25rem;
+                            margin: 0.9375rem;
+                            a{
+                                color: black;
+                                text-decoration: none;
+                                transition: 1s;
+                                &:hover{
+                                    text-decoration: overline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-derecha{
+                .footer-derecha-contacto{
+                    h3{
+                        @extend %font-contenido-fijo;
+                        @include font-footer (1.125rem, right);
+                        margin: 0.625rem;
+                    }
+                }
+                .footer-derecha-iconos{
+                    @include flex (flex, wrap, space-evenly);
+                    flex-direction: column;
+                    padding-right: 10px;
+                    align-items: flex-end;
+                    align-content: center;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                    h3{
+                        @extend %font-contenido-fijo;
+                        @include font-footer (0.9375rem, right);
+                        margin: 0.625rem;
+                    }
+                    h4{
+                        @extend %font-contenido-fijo;
+                        @include font-footer (1.125rem, right);
+                        margin: 0.625rem;
+                    }
+                }
+            }
+           
+        }
+    }
+}
+

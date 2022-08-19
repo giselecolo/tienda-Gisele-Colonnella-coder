@@ -1,0 +1,73 @@
+@import "../base/variables";
+@import "../base/mixin";
+
+.header-top {
+    width: 100%;
+    background-color: $color-principal;
+    @include flex-header (flex, row, flex-end);
+    font-family: 'Arima', cursive;
+    .header-compra {
+        width: 100%;
+        display: inline-block;
+        @include flex-header (flex, row, center);
+        @include font-1 ('Arima' cursive, 1.25em, none);
+        align-items: center;
+        align-content: center;
+        li {
+            a {
+                color: black;
+                text-decoration: none;
+                transition: 1s;
+                img {
+                    width: 28px;
+                    height: 28px;
+                    margin-left: 25px;
+                }
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+ 
+ 
+header {
+background-color: $color-principal;
+position: sticky;
+width: 100%;
+@include flex-header (flex, column, space-around);
+align-items: center;
+.header-contenedor {
+    width: 40rem;
+    box-sizing: border-box;
+    display: flex;
+    .header-logo {
+        width: 120px;
+        height: 120px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+}
+ 
+.header-menu {
+background-color: $color-principal;
+width: 100%;
+.navbar {
+    .navbar-nav{ 
+        .nav-item {
+            font-family: 'Arima', cursive;
+            font-size: 1.25em;
+            list-style: none;
+            margin-left: 2.18rem;
+            color: black;
+            a {
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+}
