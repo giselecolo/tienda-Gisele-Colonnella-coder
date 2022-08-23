@@ -92,18 +92,17 @@ h1 {
   padding-left: 5px;
   font-family: 'Arima', cursive; }
 
-.contenedor-boton .boton-ver-mas .link, .grid-container .regalos, footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-pago h3, footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-contacto h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h4 {
+.contenedor-boton .boton-ver-mas .link, .grid-container .regalos, .productos .container .input-group, .contenedor .boton-ver-mas .link, .info-mayorista .info-registro .info-registro-titulo, .info-mayorista .info-registro p, .info-mayorista .grid-galeria .grid-items h3, .info-mayorista .info-compra .accordion .accordion-item .accordion-header, .info-mayorista .info-compra .info-adicional h2, .info-mayorista .info-compra .info-adicional h3, .container .accordion .accordion-item .accordion-header, .info .info-adicional h2, .fondo-principal .formulario, footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-pago h3, footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-contacto h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h4 {
   font-family: 'Arima', cursive;
   font-style: normal;
   color: black; }
 
-/*index-MAIN*/
 .hero {
   width: 100%;
   box-sizing: border-box; }
 
 .productos h1 {
-  font-family: "Pacifico" cursive;
+  font-family: "Pacifico";
   color: black;
   margin: 1rem;
   font-size: 1.75em;
@@ -132,15 +131,16 @@ h1 {
     .productos .productos-listado .productos-listado-detalle:hover {
       box-shadow: 0px 10px 15px 0px #f3aacb; }
     .productos .productos-listado .productos-listado-detalle .boton {
+      font-family: 'Arima', cursive;
       background-color: #ffc1d5;
       border-radius: 5px;
       color: #ffc1d5;
-      padding: 6px;
-      font-size: 18px;
+      padding: 0px;
+      font-size: 16px;
       color: black;
-      font-family: "Arima" cursive;
       text-decoration: none;
-      transition: 1s; }
+      transition: 1s;
+      margin-bottom: 2px; }
       .productos .productos-listado .productos-listado-detalle .boton:hover {
         background-color: #eb9ac0;
         font-weight: bold;
@@ -186,7 +186,7 @@ h1 {
       text-align: right;
       margin-bottom: 1.25rem; }
     .tiempo div h3 {
-      font-family: "Arima" cursive;
+      font-family: "Arima";
       color: black;
       margin: 1.25rem;
       font-size: 1.25em;
@@ -194,14 +194,13 @@ h1 {
       text-align: right;
       margin-bottom: 0.9375rem; }
     .tiempo div p {
-      font-family: "Arima" cursive;
+      font-family: "Arima";
       color: black;
       margin: 1.25rem;
       font-size: 1em;
       font-style: normal;
       text-align: right; }
 
-/*grid del index*/
 .grid-container {
   width: 100%;
   margin: 5px;
@@ -225,6 +224,241 @@ h1 {
     .grid-container img:hover {
       box-shadow: 0px 10px 6px 0px #eb9ac0; }
 
+.productos h1 {
+  font-family: "Pacifico";
+  color: black;
+  margin: 1rem;
+  font-size: 1.75em;
+  text-align: center; }
+
+.productos .container {
+  border-radius: 5px; }
+  .productos .container .input-group {
+    text-decoration: none;
+    text-align: center;
+    background-color: #ffc1d5;
+    border-radius: 5px;
+    font-size: 0.875rem; }
+    .productos .container .input-group .form-select {
+      box-shadow: none;
+      border-color: black; }
+      .productos .container .input-group .form-select div {
+        font-family: 'Arima', cursive;
+        font-size: 0.875rem;
+        font-style: normal;
+        color: black; }
+    .productos .container .input-group .button {
+      color: black;
+      background-color: #ffc1d5;
+      border-radius: 5px;
+      font-size: 0.875rem;
+      padding: 6px;
+      outline: none; }
+      .productos .container .input-group .button:hover {
+        background-color: #eb9ac0;
+        font-weight: bold;
+        color: black; }
+
+.contenedor {
+  width: 100%; }
+  .contenedor .boton-ver-mas .link {
+    padding: 6px;
+    background-color: #ffc1d5;
+    border-radius: 5px;
+    font-size: 17px;
+    text-decoration: none; }
+  .contenedor .boton-ver-mas:hover {
+    background-color: #eb9ac0;
+    font-weight: bold;
+    color: black; }
+
+.info-mayorista h1 {
+  font-family: "Pacifico";
+  color: black;
+  margin: 1rem;
+  font-size: 1.75em;
+  text-align: center; }
+
+.info-mayorista .info-registro .info-registro-titulo {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.4375rem;
+  padding: 0.625rem; }
+
+.info-mayorista .info-registro p {
+  font-size: 1.125em;
+  text-align: center;
+  margin-bottom: 0.4375rem;
+  padding: 0.625rem; }
+
+.info-mayorista .grid-galeria {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 450px;
+  gap: 15px;
+  padding: 15px;
+  margin-bottom: 10px;
+  align-items: center; }
+  .info-mayorista .grid-galeria .grid-items {
+    position: relative; }
+    .info-mayorista .grid-galeria .grid-items img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      box-shadow: 9px 7px 5px 0px rgba(247, 191, 216, 0.49);
+      -webkit-box-shadow: 9px 7px 5px 0px rgba(247, 191, 216, 0.49);
+      -moz-box-shadow: 9px 7px 5px 0px rgba(247, 191, 216, 0.49);
+      border: #f7bfd8 solid 1px; }
+    .info-mayorista .grid-galeria .grid-items h3 {
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      background-color: #fbd5e5;
+      font-size: 0.9375rem;
+      text-align: center; }
+
+.info-mayorista .info-compra .accordion .accordion-item .accordion-header {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25em;
+  margin: 5px; }
+  .info-mayorista .info-compra .accordion .accordion-item .accordion-header:hover {
+    background-color: rgba(202, 196, 198, 0.87); }
+  .info-mayorista .info-compra .accordion .accordion-item .accordion-header .accordion-button {
+    background-color: #fbd5e5;
+    box-shadow: none;
+    color: black; }
+    .info-mayorista .info-compra .accordion .accordion-item .accordion-header .accordion-button:hover {
+      background-color: #eb9ac0;
+      font-weight: bold;
+      color: black; }
+
+.info-mayorista .info-compra .accordion .accordion-item .accordion-collapse .accordion-body p {
+  font-family: "Arima";
+  color: black;
+  margin: 1.25rem;
+  font-size: 1em;
+  font-style: normal;
+  text-align: center; }
+
+.info-mayorista .info-compra .info-adicional h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 0.75rem;
+  background-color: #f7bfd8;
+  transition: 1s; }
+
+.info-mayorista .info-compra .info-adicional h3 {
+  font-size: 1em;
+  text-align: justify;
+  margin-bottom: 0.9375rem;
+  padding: 0.625rem;
+  margin-bottom: 0.625rem; }
+
+.container h1 {
+  font-family: "Pacifico";
+  color: black;
+  margin: 1rem;
+  font-size: 1.75em;
+  text-align: center; }
+
+.container .accordion .accordion-item .accordion-header {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25em;
+  margin: 5px; }
+  .container .accordion .accordion-item .accordion-header:hover {
+    background-color: rgba(202, 196, 198, 0.87); }
+  .container .accordion .accordion-item .accordion-header .accordion-button {
+    background-color: #fbd5e5;
+    box-shadow: none;
+    color: black; }
+    .container .accordion .accordion-item .accordion-header .accordion-button:hover {
+      background-color: #eb9ac0;
+      font-weight: bold;
+      color: black; }
+
+.container .accordion .accordion-item .accordion-collapse .accordion-body p {
+  font-family: "Arima";
+  color: black;
+  margin: 1.25rem;
+  font-size: 1em;
+  font-style: normal;
+  text-align: center; }
+
+.container .info-imagen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin-left: 5rem; }
+  .container .info-imagen img {
+    width: 70%;
+    height: 60%; }
+
+.info .info-adicional h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 0.75rem;
+  background-color: #f7bfd8;
+  transition: 1s; }
+
+.info .info-adicional .map-responsive {
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; }
+  .info .info-adicional .map-responsive .iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+
+.fondo-principal {
+  background-image: url("../img/contacto.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%; }
+  .fondo-principal .formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    flex-direction: column;
+    margin: 0.3125rem; }
+    .fondo-principal .formulario .formulario-caja .animate__animated {
+      font-family: "Pacifico";
+      color: black;
+      margin: 1rem;
+      font-size: 1.75em;
+      text-align: center; }
+    .fondo-principal .formulario .formulario-caja .row .col-sm-10 .form-control {
+      box-shadow: none;
+      border-color: #ffc1d5; }
+    .fondo-principal .formulario .formulario-caja .row .col-sm-10 .form-check .form-check-input {
+      box-shadow: none;
+      background-color: #ffc1d5; }
+      .fondo-principal .formulario .formulario-caja .row .col-sm-10 .form-check .form-check-input:hover {
+        background-color: #eb9ac0; }
+    .fondo-principal .formulario .formulario-caja .form-floating .form-control {
+      box-shadow: none; }
+
 .productos .productos-listado .productos-listado-detalle h2, .productos .productos-listado .productos-listado-detalle h3, .productos .productos-listado .productos-listado-detalle h4 {
   color: black;
   font-style: normal;
@@ -232,7 +466,7 @@ h1 {
   padding-left: 5px;
   font-family: 'Arima', cursive; }
 
-.contenedor-boton .boton-ver-mas .link, .grid-container .regalos, footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-pago h3, footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-contacto h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h4 {
+.contenedor-boton .boton-ver-mas .link, .grid-container .regalos, .productos .container .input-group, .contenedor .boton-ver-mas .link, .info-mayorista .info-registro .info-registro-titulo, .info-mayorista .info-registro p, .info-mayorista .grid-galeria .grid-items h3, .info-mayorista .info-compra .accordion .accordion-item .accordion-header, .info-mayorista .info-compra .info-adicional h2, .info-mayorista .info-compra .info-adicional h3, .container .accordion .accordion-item .accordion-header, .info .info-adicional h2, .fondo-principal .formulario, footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-pago h3, footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-contacto h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h4 {
   font-family: 'Arima', cursive;
   font-style: normal;
   color: black; }
@@ -333,7 +567,14 @@ footer .footer-contenedor {
   .footer-derecha-iconos {
     align-items: flex-start; }
   .footer-derecha-info h3 {
-    text-align: left; } }
+    text-align: left; }
+  .info-mayorista .grid-galeria {
+    grid-auto-rows: 300px; }
+  .info-mayorista .info-compra .info-adicional h3 {
+    font-size: 1em;
+    text-align: center; }
+  .info .info-adicional .map-responsive {
+    height: 50vh; } }
 
 @media screen and (max-width: 764px) {
   .tiempo {
@@ -346,7 +587,23 @@ footer .footer-contenedor {
       text-align: center; }
     .tiempo div p {
       font-size: 0.8125em;
-      text-align: center; } }
+      text-align: center; }
+  .info-mayorista .info-registro .info-registro-titulo {
+    font-size: 1.25rem; }
+    .info-mayorista .info-registro .info-registro-titulo p {
+      font-size: 1em;
+      text-align: center; }
+  .info-mayorista .grid-galeria {
+    grid-template-columns: repeate 2, 1fr;
+    grid-auto-rows: 158px; }
+    .info-mayorista .grid-galeria .imagen1 {
+      grid-column: span 2;
+      grid-row: span 2; }
+  .info-mayorista .info-compra .info-adicional h3 {
+    font-size: 1.125em; }
+  .info .info-adicional .map-responsive {
+    height: 25vh;
+    margin-bottom: 15px; } }
 
 @media screen and (max-width: 574px) {
   .header-top .header-compra {
@@ -391,7 +648,24 @@ footer .footer-contenedor {
     .footer-items .footer-derecha .footer-derecha-iconos h3 {
       text-align: center; }
     .footer-items .footer-derecha .footer-derecha-iconos h4 {
-      text-align: center; } }
+      text-align: center; }
+  .container .input-group {
+    font-size: 0.6875rem; }
+  .info-mayorista .grid-galeria {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 464px;
+    padding: 14px; }
+    .info-mayorista .grid-galeria .grid-items {
+      grid-column: auto;
+      grid-row: auto; }
+      .info-mayorista .grid-galeria .grid-items img {
+        object-fit: contain;
+        box-shadow: none; }
+  .info-compra .info-adicional h2 {
+    font-size: 1,18rem;
+    font-weight: none; }
+  .info-compra .info-adicional h3 {
+    font-size: 0,875em; } }
 
 @media screen and (max-width: 544px) {
   .header-menu .navbar .nav-item {
@@ -405,9 +679,20 @@ footer .footer-contenedor {
       font-size: 1em;
       margin: 5px; }
     .tiempo div p {
-      font-size: 0.8125em; } }
+      font-size: 0.8125em; }
+  .info-mayorista .grid-galeria {
+    grid-template-columns: auto;
+    grid-auto-rows: 421px; }
+  .info-mayorista .info-registro .info-registro-titulo {
+    font-size: 0.875em; }
+  .container .info-imagen .animate__animated img {
+    display: none; } }
 
-@media screen and (max-width: 544px) and (max-width: 415px) {
+@media screen and (max-width: 495px) {
+  .info-mayorista .grid-galeria {
+    grid-auto-rows: 375px; } }
+
+@media screen and (max-width: 415px) {
   .hero img {
     object-fit: cover; }
   .tiempo div {
@@ -423,4 +708,16 @@ footer .footer-contenedor {
   .grid-container {
     grid-auto-rows: 168px; }
     .grid-container .regalos p {
-      padding: 0px; } }
+      padding: 0px; }
+  .info-mayorista .grid-galeria {
+    grid-auto-rows: 320px;
+    gap: 0px; }
+  .info-mayorista .info-registro .info-registro-titulo {
+    font-size: 0.875em;
+    text-align: center; }
+  .info-compra .info-adicional h2 {
+    font-size: 1.125rem; }
+  .info-compra .info-adicional h3 {
+    font-size: 0.8125em; }
+  .info-compra .accordion .accordion-item .accordion-collapse .accordion-body p {
+    font-size: 0.875rem; } }

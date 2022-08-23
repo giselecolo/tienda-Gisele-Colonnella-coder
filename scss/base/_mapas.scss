@@ -1,10 +1,10 @@
+@import "./variables";
+
 $boton:(
     bg-boton: $color-botones,
     border-boton: 5px,
     color-letra: black,
-    padding-boton: 6px,
-    tamaño-letra: 18px,
-    tipo-letra: 'Arima' cursive,
+    tamaño-letra: 16px,
     linea: none,
     hover-boton: 1s,
 );
