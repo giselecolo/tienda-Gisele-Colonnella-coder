@@ -21,7 +21,7 @@ footer{
             list-style: none;
             box-sizing: border-box;
             @include flex (flex, wrap, space-between);
-            .footer-izquieda{
+            .footer-izquierda{
                 .footer-izquierda-pago{
                     h3{
                         @extend %font-contenido-fijo;
@@ -40,16 +40,12 @@ footer{
                     }
                 }
                 .footer-izquierda-info{
-                    @extend %font-contenido-fijo;
-                    @include font-footer (1.125rem, left);
-                    margin: 0.625rem;
                     .footer-izquierda-enlaces{
                         @include flex (flex, nowrap, space-between);
                         align-items: center;
                         align-content: flex-end;
                         li{
-                            @include font-1 ('Arima' cursive, 1.25rem, none);
-                            font-size: 1.25rem;
+                            @include font-1 ('Arima', 1.25rem, none);
                             margin: 0.9375rem;
                             a{
                                 color: black;
@@ -81,19 +77,19 @@ footer{
                         width: 40px;
                         height: 40px;
                     }
+                    
                     h3{
                         @extend %font-contenido-fijo;
                         @include font-footer (0.9375rem, right);
                         margin: 0.625rem;
-                    }
+                        }
                     h4{
                         @extend %font-contenido-fijo;
                         @include font-footer (1.125rem, right);
                         margin: 0.625rem;
-                    }
+                        }
                 }
             }
-           
         }
     }
 }

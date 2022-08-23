@@ -17,23 +17,38 @@
                 object-fit: scale-down;
             }
         }
-        .regalos p{
-        font-size: 1rem;
+        .regalos{
+            p{
+                font-size: 1rem;
+            }
+        
+         }
     }
-    }
-    .footer-derecha-contacto{
-        h3{
-            text-align: left;
+    footer{
+        .footer-contenedor{
+            .footer-items{
+                .footer-derecha{
+                    .footer-derecha-contacto{
+                        h3{
+                            text-align: left;
+                        }
+                    }
+                    .footer-derecha-iconos{
+                        align-items: flex-start;
+                        h3{
+                            text-align: left;
+                        }
+                        h4{
+                            text-align: left;
+                        }
+                    }
+                        
+                    }
+                }
+                
+            }
+           
         }
-    }
-    .footer-derecha-iconos{
-        align-items: flex-start;
-    }
-    .footer-derecha-info{
-        h3{
-            text-align: left;
-        }
-    }
     .info-mayorista{
         .grid-galeria{
             grid-auto-rows: 300px;
@@ -47,24 +62,17 @@
             }
         }
     }
-    //envio//
-    .info{
-        .info-adicional{
-            .map-responsive{
-                height: 50vh;
-                
-            }
-        }
-    }
+    
 }
  
 @media screen and (max-width:764px){
     // Index//
     .tiempo{
         justify-content: center;
+        background-position: right;
         div{
             h2{
-                font-size: 1.375em;
+                font-size: 1.25em;
                 text-align: center;
             }
             h3{
@@ -72,24 +80,85 @@
                 text-align: center;
             }
             p{
-                font-size: 0.8125em;
+                font-size: 0.75em;
                 text-align: center;
             }
         }
     }
+    //main//
+    .grid-container{
+        .regalos{
+            p{
+                font-size: 0.75rem;
+            }
+    }
+    }
+    //footer//
+footer{
+    .footer-contenedor{
+        .footer-items{
+            justify-content: center;
+            .footer-izquierda{
+                .footer-izquierda-pago{
+                    justify-content: center;
+                    h3{
+                        text-align: center;
+                        font-size: 0.9375em;
+                        }
+                    }
+                    .footer-izquierda-iconos{
+                        align-items:center;
+                        justify-content: center;
+                    }
+                    .footer-izquierda-info{
+                        .footer-izquierda-enlaces{
+                            flex-direction: column;
+                            li{
+                            font-size: 0.9375em;
+                            margin: 0.625em;
+                            }
+                        }
+                    }
+            }
+            .footer-derecha{
+                .footer-derecha-contacto{
+                    h3{
+                        text-align: center;
+                        font-size: 0.9375em;
+                    }
+                }
+                .footer-derecha-iconos{
+                    justify-content: center;
+                    align-items:center;
+                    h3{
+                        text-align: center;
+                        font-size: 0.9375em;
+                    }
+                    h4{
+                        text-align: center;
+                        font-size: 0.80em;
+                    }
+                }    
+            }
+            
+        }
+    }
+    
+}
+    
     // mayorista//
     .info-mayorista{
         .info-registro{
             .info-registro-titulo{
                 font-size: 1.25rem;
-                p{
-                    font-size: 1em;
-                    text-align: center;
-                    }
             }
+            p{
+                font-size: 1em;
+                text-align: center;
+                }
         }
         .grid-galeria{
-            grid-template-columns: repeate (2,1fr);
+            grid-template-columns: repeat(2,1fr);
             grid-auto-rows: 158px;
             .imagen1{
                 grid-column: span 2; 
@@ -108,7 +177,7 @@
     .info{
         .info-adicional{
             .map-responsive{
-                height: 25vh;
+                
                 margin-bottom: 15px;
             }
         }
@@ -151,46 +220,13 @@
         }
         .regalos{
             p{
-                padding:0px;  
+                padding:0px;
+                font-size: 1rem;
             }
         }
        
     }
-    .footer-items{
-        .footer-izquierda-pago{
-            justify-content: center;
-            h3{
-                text-align: center;
-            }
-            }
-            .footer-izquierda-iconos{
-            align-items:center;
-            justify-content: center;
-            }
-            .footer-izquierda-enlaces{
-            flex-direction: column;
-            li{
-                font-size: 0.9375em;
-                margin: 0.625em;
-                }
-            }
-        .footer-derecha{
-            .footer-derecha-contacto{
-                h3{
-                    text-align: center;
-                }
-            }
-            .footer-derecha-iconos{
-                align-items: center;
-                h3{
-                    text-align: center;
-                }
-                h4{
-                    text-align: center;
-                }
-            }
-        }          
-    }
+    
         // productos//
     .container{
         .input-group{
@@ -214,17 +250,25 @@
         }
     }
     .info-compra{
-        .info-adicional{
-            h2{
-                font-size: 1,18rem;
-                 font-weight: none;
-            }
-            h3{
-                font-size: 0,875em;
+        .accordion-flush{
+            .accordion-item{
+                .accordion-collapse{
+                    .accordion-body{
+                        p{
+                        margin: 0px;
+                        font-size: 0.90em;
+                        }
+                    }
+                }
+                .accordion-header{
+                    font-size: 0.95em;
+                }
             }
         }
     }
+   
 }
+
 @media screen and (max-width: 544px){
     // Index//
     .header-menu{
@@ -262,8 +306,7 @@
             .info-registro-titulo{
                 font-size: 0.875em;
             }
-        }
-            
+        }      
     }
     // envio//
     .container{
@@ -287,70 +330,72 @@
 }
 @media screen and (max-width:415px){
     // index//
-    .hero{
-        img{
-            object-fit: cover;
-        }
-    }
-    .tiempo{
-        div{
-            padding: 0px;
-            h2{
-                font-size: 1rem;
-                padding-top:5px;
-            }
-            h3{
-                font-size: 0.8125em;
-            }
-            p{
-                font-size: 0.6875em;
-                margin: 0px;
+        .hero{
+            img{
+                object-fit: cover;
             }
         }
-    }
-    .grid-container{
-        grid-auto-rows: 168px;
-        .regalos{
-                 p{
-                     padding:0px;
-                    }
+        .tiempo{
+            div{
+                padding: 0px;
+                h2{
+                    font-size: 1rem;
+                    padding-top:5px;
                 }
-    }
-    // mayorista//
-    .info-mayorista{
-        .grid-galeria{
-            grid-auto-rows: 320px;
+                h3{
+                    font-size: 0.8125em;
+                }
+                p{
+                    font-size: 0.6875em;
+                    margin: 0px;
+                }
+            }
+        }
+        .grid-container{
+            grid-auto-rows: 168px;
+            margin: 0px;
             gap: 0px;
-        }
-        .info-registro{
-            .info-registro-titulo{
-                font-size: 0.875em;
-                text-align: center;
+            .regalos{
+                p{
+                font-size: 0.80rem;
             }
         }
-    } 
-    .info-compra{
-        .info-adicional{
-            h2{
-                font-size: 1.125rem;
-            }
-            h3{
-                font-size: 0.8125em;
-            }
         }
-        .accordion{
-            .accordion-item{
-                .accordion-collapse{
-                    .accordion-body{
-                        p{
-                        font-size: 0.875rem;
+    
+    // mayorista//
+        .info-mayorista{
+            .grid-galeria{
+                grid-auto-rows: 320px;
+                gap: 0px;
+            }
+            .info-registro{
+                .info-registro-titulo{
+                    font-size: 0.875em;
+                    text-align: center;
+                }
+            }
+        } 
+            .info-compra{
+                .info-adicional{
+                    h2{
+                        font-size: 1.125rem;
+                    }
+                    h3{
+                        font-size: 0.8125em;
+                    }
+            }
+                .accordion-flush{
+                    .accordion-item{
+                        .accordion-collapse{
+                            .accordion-body{
+                                
+                                font-size: 0.875rem;
+                                
+                            }
                         }
                     }
                 }
-            }
         }
-            
+    
     }
-}
-
-
+    

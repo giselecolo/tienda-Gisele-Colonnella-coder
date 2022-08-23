@@ -92,7 +92,7 @@ h1 {
   padding-left: 5px;
   font-family: 'Arima', cursive; }
 
-.contenedor-boton .boton-ver-mas .link, .grid-container .regalos, .productos .container .input-group, .contenedor .boton-ver-mas .link, .info-mayorista .info-registro .info-registro-titulo, .info-mayorista .info-registro p, .info-mayorista .grid-galeria .grid-items h3, .info-mayorista .info-compra .accordion .accordion-item .accordion-header, .info-mayorista .info-compra .info-adicional h2, .info-mayorista .info-compra .info-adicional h3, .container .accordion .accordion-item .accordion-header, .info .info-adicional h2, .fondo-principal .formulario, footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-pago h3, footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-contacto h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h4 {
+.contenedor-boton .boton-ver-mas .link, .grid-container .regalos p, .productos .container .input-group, .contenedor .boton-ver-mas .link, .info-mayorista .info-registro .info-registro-titulo, .info-mayorista .info-registro p, .info-mayorista .grid-galeria .grid-items h3, .info-mayorista .info-compra .accordion-flush .accordion-item .accordion-header, .info-mayorista .info-compra .info-adicional h2, .info-mayorista .info-compra .info-adicional h3, .container .accordion .accordion-item .accordion-header, .info .info-adicional h2, .fondo-principal .formulario, footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-pago h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-contacto h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h4 {
   font-family: 'Arima', cursive;
   font-style: normal;
   color: black; }
@@ -212,10 +212,11 @@ h1 {
     grid-column: span 2; }
   .grid-container .regalos {
     width: 100%;
-    height: 100%;
-    font-size: 1.25rem;
-    text-align: center;
-    padding: 1.25em; }
+    height: 100%; }
+    .grid-container .regalos p {
+      font-size: 1.15rem;
+      text-align: center;
+      padding: 1.25em; }
   .grid-container img {
     width: 100%;
     height: 100%;
@@ -319,25 +320,23 @@ h1 {
       font-size: 0.9375rem;
       text-align: center; }
 
-.info-mayorista .info-compra .accordion .accordion-item .accordion-header {
+.info-mayorista .info-compra .accordion-flush .accordion-item .accordion-header {
   width: 100%;
   height: 100%;
   text-align: center;
   font-weight: bold;
   font-size: 1.25em;
   margin: 5px; }
-  .info-mayorista .info-compra .accordion .accordion-item .accordion-header:hover {
-    background-color: rgba(202, 196, 198, 0.87); }
-  .info-mayorista .info-compra .accordion .accordion-item .accordion-header .accordion-button {
+  .info-mayorista .info-compra .accordion-flush .accordion-item .accordion-header .accordion-button {
     background-color: #fbd5e5;
     box-shadow: none;
     color: black; }
-    .info-mayorista .info-compra .accordion .accordion-item .accordion-header .accordion-button:hover {
+    .info-mayorista .info-compra .accordion-flush .accordion-item .accordion-header .accordion-button:hover {
       background-color: #eb9ac0;
       font-weight: bold;
       color: black; }
 
-.info-mayorista .info-compra .accordion .accordion-item .accordion-collapse .accordion-body p {
+.info-mayorista .info-compra .accordion-flush .accordion-item .accordion-collapse .accordion-body p {
   font-family: "Arima";
   color: black;
   margin: 1.25rem;
@@ -466,7 +465,7 @@ h1 {
   padding-left: 5px;
   font-family: 'Arima', cursive; }
 
-.contenedor-boton .boton-ver-mas .link, .grid-container .regalos, .productos .container .input-group, .contenedor .boton-ver-mas .link, .info-mayorista .info-registro .info-registro-titulo, .info-mayorista .info-registro p, .info-mayorista .grid-galeria .grid-items h3, .info-mayorista .info-compra .accordion .accordion-item .accordion-header, .info-mayorista .info-compra .info-adicional h2, .info-mayorista .info-compra .info-adicional h3, .container .accordion .accordion-item .accordion-header, .info .info-adicional h2, .fondo-principal .formulario, footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-pago h3, footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-contacto h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h4 {
+.contenedor-boton .boton-ver-mas .link, .grid-container .regalos p, .productos .container .input-group, .contenedor .boton-ver-mas .link, .info-mayorista .info-registro .info-registro-titulo, .info-mayorista .info-registro p, .info-mayorista .grid-galeria .grid-items h3, .info-mayorista .info-compra .accordion-flush .accordion-item .accordion-header, .info-mayorista .info-compra .info-adicional h2, .info-mayorista .info-compra .info-adicional h3, .container .accordion .accordion-item .accordion-header, .info .info-adicional h2, .fondo-principal .formulario, footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-pago h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-contacto h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h4 {
   font-family: 'Arima', cursive;
   font-style: normal;
   color: black; }
@@ -491,42 +490,37 @@ footer .footer-contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
-    footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-pago h3 {
+    footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-pago h3 {
       font-size: 1.125em;
       text-align: left;
       margin: 0.625rem; }
-    footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-iconos {
+    footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-iconos {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
       flex-direction: row; }
-      footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-iconos img {
+      footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-iconos img {
         width: 50px;
         height: 26px;
         margin: 0px 5px 5px 0px;
         box-sizing: border-box; }
-    footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info {
-      font-size: 1.125rem;
-      text-align: left;
-      margin: 0.625rem; }
-      footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info .footer-izquierda-enlaces {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        align-content: flex-end; }
-        footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info .footer-izquierda-enlaces li {
-          font-family: "Arima" cursive;
-          font-size: 1.25rem;
-          list-style: none;
-          font-size: 1.25rem;
-          margin: 0.9375rem; }
-          footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info .footer-izquierda-enlaces li a {
-            color: black;
-            text-decoration: none;
-            transition: 1s; }
-            footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info .footer-izquierda-enlaces li a:hover {
-              text-decoration: overline; }
+    footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-info .footer-izquierda-enlaces {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      align-content: flex-end; }
+      footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-info .footer-izquierda-enlaces li {
+        font-family: "Arima";
+        font-size: 1.25rem;
+        list-style: none;
+        margin: 0.9375rem; }
+        footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-info .footer-izquierda-enlaces li a {
+          color: black;
+          text-decoration: none;
+          transition: 1s; }
+          footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-info .footer-izquierda-enlaces li a:hover {
+            text-decoration: overline; }
     footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-contacto h3 {
       font-size: 1.125rem;
       text-align: right;
@@ -562,39 +556,69 @@ footer .footer-contenedor {
     object-fit: scale-down; }
   .grid-container .regalos p {
     font-size: 1rem; }
-  .footer-derecha-contacto h3 {
+  footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-contacto h3 {
     text-align: left; }
-  .footer-derecha-iconos {
+  footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos {
     align-items: flex-start; }
-  .footer-derecha-info h3 {
-    text-align: left; }
+    footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h3 {
+      text-align: left; }
+    footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h4 {
+      text-align: left; }
   .info-mayorista .grid-galeria {
     grid-auto-rows: 300px; }
   .info-mayorista .info-compra .info-adicional h3 {
     font-size: 1em;
-    text-align: center; }
-  .info .info-adicional .map-responsive {
-    height: 50vh; } }
+    text-align: center; } }
 
 @media screen and (max-width: 764px) {
   .tiempo {
-    justify-content: center; }
+    justify-content: center;
+    background-position: right; }
     .tiempo div h2 {
-      font-size: 1.375em;
+      font-size: 1.25em;
       text-align: center; }
     .tiempo div h3 {
       font-size: 1.0625em;
       text-align: center; }
     .tiempo div p {
-      font-size: 0.8125em;
+      font-size: 0.75em;
       text-align: center; }
+  .grid-container .regalos p {
+    font-size: 0.75rem; }
+  footer .footer-contenedor .footer-items {
+    justify-content: center; }
+    footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-pago {
+      justify-content: center; }
+      footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-pago h3 {
+        text-align: center;
+        font-size: 0.9375em; }
+    footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-iconos {
+      align-items: center;
+      justify-content: center; }
+    footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-info .footer-izquierda-enlaces {
+      flex-direction: column; }
+      footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-info .footer-izquierda-enlaces li {
+        font-size: 0.9375em;
+        margin: 0.625em; }
+    footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-contacto h3 {
+      text-align: center;
+      font-size: 0.9375em; }
+    footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos {
+      justify-content: center;
+      align-items: center; }
+      footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h3 {
+        text-align: center;
+        font-size: 0.9375em; }
+      footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h4 {
+        text-align: center;
+        font-size: 0.80em; }
   .info-mayorista .info-registro .info-registro-titulo {
     font-size: 1.25rem; }
-    .info-mayorista .info-registro .info-registro-titulo p {
-      font-size: 1em;
-      text-align: center; }
+  .info-mayorista .info-registro p {
+    font-size: 1em;
+    text-align: center; }
   .info-mayorista .grid-galeria {
-    grid-template-columns: repeate 2, 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 158px; }
     .info-mayorista .grid-galeria .imagen1 {
       grid-column: span 2;
@@ -602,7 +626,6 @@ footer .footer-contenedor {
   .info-mayorista .info-compra .info-adicional h3 {
     font-size: 1.125em; }
   .info .info-adicional .map-responsive {
-    height: 25vh;
     margin-bottom: 15px; } }
 
 @media screen and (max-width: 574px) {
@@ -628,27 +651,8 @@ footer .footer-contenedor {
     .grid-container .img1 img {
       object-fit: scale-down; }
     .grid-container .regalos p {
-      padding: 0px; }
-  .footer-items .footer-izquierda-pago {
-    justify-content: center; }
-    .footer-items .footer-izquierda-pago h3 {
-      text-align: center; }
-  .footer-items .footer-izquierda-iconos {
-    align-items: center;
-    justify-content: center; }
-  .footer-items .footer-izquierda-enlaces {
-    flex-direction: column; }
-    .footer-items .footer-izquierda-enlaces li {
-      font-size: 0.9375em;
-      margin: 0.625em; }
-  .footer-items .footer-derecha .footer-derecha-contacto h3 {
-    text-align: center; }
-  .footer-items .footer-derecha .footer-derecha-iconos {
-    align-items: center; }
-    .footer-items .footer-derecha .footer-derecha-iconos h3 {
-      text-align: center; }
-    .footer-items .footer-derecha .footer-derecha-iconos h4 {
-      text-align: center; }
+      padding: 0px;
+      font-size: 1rem; }
   .container .input-group {
     font-size: 0.6875rem; }
   .info-mayorista .grid-galeria {
@@ -661,11 +665,11 @@ footer .footer-contenedor {
       .info-mayorista .grid-galeria .grid-items img {
         object-fit: contain;
         box-shadow: none; }
-  .info-compra .info-adicional h2 {
-    font-size: 1,18rem;
-    font-weight: none; }
-  .info-compra .info-adicional h3 {
-    font-size: 0,875em; } }
+  .info-compra .accordion-flush .accordion-item .accordion-collapse .accordion-body p {
+    margin: 0px;
+    font-size: 0.90em; }
+  .info-compra .accordion-flush .accordion-item .accordion-header {
+    font-size: 0.95em; } }
 
 @media screen and (max-width: 544px) {
   .header-menu .navbar .nav-item {
@@ -706,9 +710,11 @@ footer .footer-contenedor {
       font-size: 0.6875em;
       margin: 0px; }
   .grid-container {
-    grid-auto-rows: 168px; }
+    grid-auto-rows: 168px;
+    margin: 0px;
+    gap: 0px; }
     .grid-container .regalos p {
-      padding: 0px; }
+      font-size: 0.80rem; }
   .info-mayorista .grid-galeria {
     grid-auto-rows: 320px;
     gap: 0px; }
@@ -719,5 +725,5 @@ footer .footer-contenedor {
     font-size: 1.125rem; }
   .info-compra .info-adicional h3 {
     font-size: 0.8125em; }
-  .info-compra .accordion .accordion-item .accordion-collapse .accordion-body p {
+  .info-compra .accordion-flush .accordion-item .accordion-collapse .accordion-body {
     font-size: 0.875rem; } }
