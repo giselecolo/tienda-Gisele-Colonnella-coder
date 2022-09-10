@@ -13,7 +13,7 @@ footer{
             @include flex-2 (flex, center, center);
             img{
                 width: 90px;
-                height: 90px;
+                height: 70px;
             }
         }
         .footer-items{
@@ -25,7 +25,7 @@ footer{
                 .footer-izquierda-pago{
                     h3{
                         @extend %font-contenido-fijo;
-                        @include font-footer (1.125em, left);
+                        @include font-footer (1em, left);
                         margin: 0.625rem;
                     }
                 }
@@ -42,10 +42,11 @@ footer{
                 .footer-izquierda-info{
                     .footer-izquierda-enlaces{
                         @include flex (flex, nowrap, space-between);
+                        padding-left: 0;
                         align-items: center;
                         align-content: flex-end;
                         li{
-                            @include font-1 ('Arima', 1.25rem, none);
+                            @include font-1 ('Arima', 1rem, none);
                             margin: 0.9375rem;
                             a{
                                 color: black;
@@ -63,7 +64,7 @@ footer{
                 .footer-derecha-contacto{
                     h3{
                         @extend %font-contenido-fijo;
-                        @include font-footer (1.125rem, right);
+                        @include font-footer (1rem, right);
                         margin: 0.625rem;
                     }
                 }
@@ -85,7 +86,7 @@ footer{
                         }
                     h4{
                         @extend %font-contenido-fijo;
-                        @include font-footer (1.125rem, right);
+                        @include font-footer (1rem, right);
                         margin: 0.625rem;
                         }
                 }

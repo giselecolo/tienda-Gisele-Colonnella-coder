@@ -8,7 +8,7 @@
   box-sizing: border-box; }
 
 h1 {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico';
   text-align: center;
   font-size: 1.75em;
   color: black;
@@ -20,28 +20,31 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  font-family: 'Arima', cursive; }
+  font-family: 'Arima'; }
   .header-top .header-compra {
     width: 100%;
     display: inline-block;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-family: "Arima" cursive;
-    font-size: 1.25em;
+    font-family: "Arima";
+    font-size: 0.9375rem;
     list-style: none;
     align-items: center;
-    align-content: center; }
-    .header-top .header-compra li a {
+    margin-bottom: 5px; }
+    .header-top .header-compra li .login {
       color: black;
       text-decoration: none;
-      transition: 1s; }
-      .header-top .header-compra li a img {
-        width: 28px;
-        height: 28px;
-        margin-left: 25px; }
-      .header-top .header-compra li a:hover {
+      transition: 1s;
+      padding-left: 10px; }
+      .header-top .header-compra li .login:hover {
         font-weight: bold; }
+      .header-top .header-compra li .login::after {
+        content: '|'; }
+    .header-top .header-compra li .carrito img {
+      width: 25px;
+      height: 25px;
+      margin-left: 25px; }
 
 header {
   background-color: #ffe4ec;
@@ -52,26 +55,23 @@ header {
   justify-content: space-around;
   align-items: center; }
   header .header-contenedor {
-    width: 40rem;
     box-sizing: border-box;
     display: flex; }
-    header .header-contenedor .header-logo {
-      width: 120px;
-      height: 120px;
+    header .header-contenedor .header-logo img {
+      width: 100px;
+      height: 100px;
       justify-content: flex-start;
       align-items: center; }
-
-.header-menu {
-  background-color: #ffe4ec;
-  width: 100%; }
-  .header-menu .navbar .navbar-nav .nav-item {
-    font-family: 'Arima', cursive;
-    font-size: 1.25em;
-    list-style: none;
-    margin-left: 2.18rem;
-    color: black; }
-    .header-menu .navbar .navbar-nav .nav-item a:hover {
-      font-weight: bold; }
+  header .header-menu {
+    background-color: #ffe4ec;
+    width: 100%; }
+    header .header-menu .navbar .navbar-nav .nav-item {
+      font-family: 'Arima', cursive;
+      font-size: 1.25em;
+      list-style: none;
+      color: black; }
+      header .header-menu .navbar .navbar-nav .nav-item a:hover {
+        font-weight: bold; }
 
 * {
   margin: 0;
@@ -79,7 +79,7 @@ header {
   box-sizing: border-box; }
 
 h1 {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico';
   text-align: center;
   font-size: 1.75em;
   color: black;
@@ -166,7 +166,6 @@ h1 {
 .tiempo {
   width: 100%;
   height: 100%;
-  padding: 5px;
   background-image: url("../img/demoraprueba.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -339,7 +338,7 @@ h1 {
 .info-mayorista .info-compra .accordion-flush .accordion-item .accordion-collapse .accordion-body p {
   font-family: "Arima";
   color: black;
-  margin: 1.25rem;
+  margin: 0;
   font-size: 1em;
   font-style: normal;
   text-align: center; }
@@ -387,7 +386,7 @@ h1 {
 .container .accordion .accordion-item .accordion-collapse .accordion-body p {
   font-family: "Arima";
   color: black;
-  margin: 1.25rem;
+  margin: 0;
   font-size: 1em;
   font-style: normal;
   text-align: center; }
@@ -482,7 +481,7 @@ footer .footer-contenedor {
     align-items: center; }
     footer .footer-contenedor .footer-logo img {
       width: 90px;
-      height: 90px; }
+      height: 70px; }
   footer .footer-contenedor .footer-items {
     width: 100%;
     list-style: none;
@@ -491,7 +490,7 @@ footer .footer-contenedor {
     flex-wrap: wrap;
     justify-content: space-between; }
     footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-pago h3 {
-      font-size: 1.125em;
+      font-size: 1em;
       text-align: left;
       margin: 0.625rem; }
     footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-iconos {
@@ -508,11 +507,12 @@ footer .footer-contenedor {
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-between;
+      padding-left: 0;
       align-items: center;
       align-content: flex-end; }
       footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-info .footer-izquierda-enlaces li {
         font-family: "Arima";
-        font-size: 1.25rem;
+        font-size: 1rem;
         list-style: none;
         margin: 0.9375rem; }
         footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-info .footer-izquierda-enlaces li a {
@@ -522,7 +522,7 @@ footer .footer-contenedor {
           footer .footer-contenedor .footer-items .footer-izquierda .footer-izquierda-info .footer-izquierda-enlaces li a:hover {
             text-decoration: overline; }
     footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-contacto h3 {
-      font-size: 1.125rem;
+      font-size: 1rem;
       text-align: right;
       margin: 0.625rem; }
     footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos {
@@ -541,7 +541,7 @@ footer .footer-contenedor {
         text-align: right;
         margin: 0.625rem; }
       footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h4 {
-        font-size: 1.125rem;
+        font-size: 1rem;
         text-align: right;
         margin: 0.625rem; }
 

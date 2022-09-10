@@ -1,5 +1,5 @@
 @mixin flex-header ($flex, $direction, $justify){
-    display: flex;
+    display: $flex;
     flex-direction: $direction;
     justify-content: $justify;
 }

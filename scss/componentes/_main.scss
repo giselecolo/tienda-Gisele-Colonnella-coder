@@ -87,7 +87,7 @@
 .tiempo {
     width: 100%;
     height: 100%;
-    padding: 5px;
+    
     background-image: url("../img/demoraprueba.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -274,7 +274,6 @@
                         background-color: #fbd5e5;
                         box-shadow: none;   
                         color: black;
-                        
                         &:hover{
                             background-color: map-get($rosa-hover, bg-hover);
                             font-weight: map-get($rosa-hover, grosor);
@@ -285,7 +284,7 @@
                 .accordion-collapse{
                     .accordion-body{
                         p{
-                            @include font-general ('Arima', black, 1.25rem, 1em);
+                            @include font-general ('Arima', black, 0, 1em);
                             @include estilos-fuentes (normal, center);
                         }
                     }
@@ -346,7 +345,7 @@
             .accordion-collapse{
                 .accordion-body{
                     p{
-                        @include font-general ('Arima', black, 1.25rem, 1em);
+                        @include font-general ('Arima', black, 0, 1em);
                         @include estilos-fuentes (normal, center);
                     }
                 }

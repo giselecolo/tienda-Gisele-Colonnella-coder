@@ -5,69 +5,77 @@
     width: 100%;
     background-color: $color-principal;
     @include flex-header (flex, row, flex-end);
-    font-family: 'Arima', cursive;
+    font-family: 'Arima';
     .header-compra {
         width: 100%;
         display: inline-block;
         @include flex-header (flex, row, center);
-        @include font-1 ('Arima' cursive, 1.25em, none);
+        @include font-1 ('Arima', 0.9375rem, none);
         align-items: center;
-        align-content: center;
+        margin-bottom: 5px;
         li {
-            a {
+            .login{
                 color: black;
                 text-decoration: none;
                 transition: 1s;
-                img {
-                    width: 28px;
-                    height: 28px;
-                    margin-left: 25px;
-                }
+                padding-left: 10px;
                 &:hover {
                     font-weight: bold;
                 }
+                &::after{
+                    content: '|';
+                }             
             }
+            .carrito{
+                img{
+                    width: 25px;
+                    height: 25px;
+                    margin-left: 25px;
+                 } 
+            }  
         }
     }
 }
  
  
 header {
-background-color: $color-principal;
-position: sticky;
-width: 100%;
-@include flex-header (flex, column, space-around);
-align-items: center;
-.header-contenedor {
-    width: 40rem;
-    box-sizing: border-box;
-    display: flex;
-    .header-logo {
-        width: 120px;
-        height: 120px;
-        justify-content: flex-start;
-        align-items: center;
-    }
-}
-}
- 
-.header-menu {
-background-color: $color-principal;
-width: 100%;
-.navbar {
-    .navbar-nav{ 
-        .nav-item {
-            font-family: 'Arima', cursive;
-            font-size: 1.25em;
-            list-style: none;
-            margin-left: 2.18rem;
-            color: black;
-            a {
-                &:hover {
-                    font-weight: bold;
-                }
+    background-color: $color-principal;
+    position: sticky;
+    width: 100%;
+    @include flex-header (flex, column, space-around);
+    align-items: center;
+    .header-contenedor {
+        
+        box-sizing: border-box;
+        display: flex;
+        .header-logo {
+            img{
+                width: 100px;
+                height: 100px;
+                justify-content: flex-start;
+                align-items: center;
             }
         }
     }
+    .header-menu {
+        background-color: $color-principal;
+        width: 100%;
+        .navbar {
+            .navbar-nav{ 
+                .nav-item {
+                    font-family: 'Arima', cursive;
+                    font-size: 1.25em;
+                    list-style: none;
+                    
+                    color: black;
+                    a {
+                        &:hover {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }    
 }
-}
+ 
